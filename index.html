@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GreenFood</title>
+  <link rel="stylesheet" href="greenFoods.css">
+</head>
+
+<body>
+  <div class="container">
+    <header id="navbar">
+      <a href="#" class="logo">Good<span>Foods</span></a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#" class="">Menu</a></li>
+        <li><a href="#" class="">About</a></li>
+        <li><a href="#" class="">Contact</a></li>
+      </ul>
+      <span class="menuIcon" onclick="menuToggle();"></span>
+    </header>
+    <div class="content">
+      <div class="bannerText" id="slideshowText">
+        <div class="active">
+          <h2>EAT Healthy<br>Stay Healthy</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat, consequuntur quos cumque sequi
+            placeat recusandae tempora repudiandae excepturi eligendi, corporis repellat, a quia iure impedit molestias
+            dolorem debitis corrupti.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div>
+          <h2>EAT Your<br>Veggies</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat, consequuntur quos cumque sequi
+            placeat recusandae tempora repudiandae excepturi eligendi, corporis repellat, a quia iure impedit molestias
+            dolorem debitis corrupti.</p>
+          <a href="#">Read More</a>
+        </div>
+        <div>
+          <h2>Good Food<br>Good Mood</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat, consequuntur quos cumque sequi
+            placeat recusandae tempora repudiandae excepturi eligendi, corporis repellat, a quia iure impedit molestias
+            dolorem debitis corrupti.</p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="bannerImg" id="slideshow">
+        <img src="assets/greenFood1.jpg" alt="greenFood1" class="active">
+        <img src="assets/greenFood2.jpg" alt="greenFood2">
+        <img src="assets/greenFood3.jpg" alt="greenFood3">
+      </div>
+    </div>
+    <div class="icons">
+      <ul class="sci">
+        <li><a href="#"><img src="assets/facebookIcon.png" alt="face"></a></li>
+        <li><a href="#"><img src="assets/twitterIcon.png" alt="twitter"></a></li>
+        <li><a href="#"><img src="assets/instagramIcon.png" alt="insta"></a></li>
+      </ul>
+      <ul class="controls">
+        <li><a href="#"><img src="assets/arrow-left.png" alt="left" onclick="prevSlide(); prevSlideText();"></a></li>
+        <li><a href="#"><img src="assets/arrow-right.png" alt="right" onclick="nextSlide(); nextSlideText();"></a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="greenFoods.js"></script>
+</body>
+
+</html>
